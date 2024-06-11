@@ -960,7 +960,7 @@
                     return rules.map(newWebFont);
                 });
             function filterWebFontRules(rules) {
-                const fonstToFilter = ['Glyphicons Halflings']
+                const fonstToFilter = ['Glyphicons Halflings', 'GilroyFont'];
                 return rules.filter((rule) => {
                     return !fonstToFilter.some(fontToFilter => rule.cssText.includes(fontToFilter))
                 })
