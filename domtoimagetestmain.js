@@ -960,9 +960,9 @@
                     return rules.map(newWebFont);
                 });
             function filterWebFontRules(rules) {
-                const fonstToFilter = ['Glyphicons Halflings', 'GilroyFont'];
+                const fontsToInclude = ['Open Sans', 'BiNeoIndustrial-Bold', 'BiNeoIndustrial-Regular'];
                 return rules.filter((rule) => {
-                    return !fonstToFilter.some(fontToFilter => rule.cssText.includes(fontToFilter))
+                    return fontsToInclude.some(font => rule.cssText.includes(font))
                 })
             }
             function selectWebFontRules(cssRules) {
